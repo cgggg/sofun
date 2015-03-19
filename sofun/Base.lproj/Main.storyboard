@@ -424,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T10-lJ-uMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280" y="1708"/>
+            <point key="canvasLocation" x="5092" y="1708"/>
         </scene>
         <!--菜品详情-->
         <scene sceneID="9QC-qj-Jq0">
@@ -673,16 +673,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p9-g1-t4l">
-                                <rect key="frame" x="70" y="399" width="246" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p9-g1-t4l">
+                                <rect key="frame" x="108" y="401" width="246" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9X-o9-9Pk">
-                                <rect key="frame" x="30" y="397" width="32" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9X-o9-9Pk">
+                                <rect key="frame" x="99" y="425" width="115" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" image="item_addr">
+                                <state key="normal" title="地图定位" image="item_addr">
                                     <color key="titleColor" red="1" green="0.5689418503" blue="0.085626724020000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -695,52 +695,49 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b54-sB-6Vl">
-                                <rect key="frame" x="30" y="436" width="35" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="电话" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQO-ti-tdf">
+                                <rect key="frame" x="108" y="458" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" image="item_call">
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b54-sB-6Vl">
+                                <rect key="frame" x="99" y="480" width="115" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="电话订餐" image="item_call">
                                     <color key="titleColor" red="1" green="0.5689418503" blue="0.085626724020000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="phoneBtn:" destination="apB-Dq-3H4" eventType="touchUpInside" id="7aF-BG-rEa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQO-ti-tdf">
-                                <rect key="frame" x="70" y="438" width="240" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dq-eq-H34">
-                                <rect key="frame" x="33" y="469" width="27" height="39"/>
-                                <state key="normal" title="Button" image="picture">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="JKQ-x3-Clm" kind="show" id="GHP-ig-P29"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="餐馆风采" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-Ok-fFc">
-                                <rect key="frame" x="70" y="478" width="78" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="b54-sB-6Vl" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="20" id="3ec-6e-5CM"/>
                             <constraint firstItem="rvH-Qq-Bsa" firstAttribute="top" secondItem="mNn-jO-02r" secondAttribute="bottom" constant="230" id="7Nb-6G-iD2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3p9-g1-t4l" secondAttribute="trailing" constant="30" id="Csc-U8-yjb"/>
+                            <constraint firstItem="3p9-g1-t4l" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="30" id="DCH-4R-w7X"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fb2-fX-z3z" secondAttribute="trailing" constant="100" id="Jwj-Rk-ict"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QJ8-QM-spP" secondAttribute="trailing" constant="30" id="RQf-bj-uUN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mNn-jO-02r" secondAttribute="trailing" constant="30" id="V1f-lL-zaQ"/>
+                            <constraint firstItem="lQO-ti-tdf" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="30" id="XrL-bL-caV"/>
                             <constraint firstItem="mNn-jO-02r" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="30" id="YKN-bq-xrP"/>
+                            <constraint firstItem="O9X-o9-9Pk" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="20" id="bzl-vx-NuB"/>
                             <constraint firstItem="QJ8-QM-spP" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="30" id="d6d-7c-CDM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lQO-ti-tdf" secondAttribute="trailing" constant="30" id="dT2-Xh-GwY"/>
                             <constraint firstItem="mNn-jO-02r" firstAttribute="top" secondItem="8sM-l9-UON" secondAttribute="bottom" constant="30" id="l8m-O2-FIG"/>
                             <constraint firstItem="Fb2-fX-z3z" firstAttribute="leading" secondItem="Gyj-mP-OVB" secondAttribute="leadingMargin" constant="100" id="rka-EZ-tUB"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="5jE-j0-G02"/>
+                    <navigationItem key="navigationItem" id="5jE-j0-G02">
+                        <barButtonItem key="rightBarButtonItem" title="风采" id="QgE-X6-KPz">
+                            <connections>
+                                <segue destination="Ei4-6B-ckP" kind="show" id="cu9-Gp-YHh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="describe" destination="QJ8-QM-spP" id="rcq-Se-D2Y"/>
@@ -787,12 +784,20 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JKQ-x3-Clm" id="75I-O1-uvj"/>
+                                    <outlet property="delegate" destination="JKQ-x3-Clm" id="nIE-YU-Xh0"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UuQ-7j-rqo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Pex-pc-Jsk"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Pex-pc-Jsk">
+                            <connections>
+                                <action selector="showPic:" destination="JKQ-x3-Clm" id="pEG-Qi-Kkz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="DLs-Nz-q9D" id="nzu-UU-FYm"/>
@@ -800,7 +805,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgK-X8-CGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="2303"/>
+            <point key="canvasLocation" x="1179" y="2303"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -945,6 +950,24 @@
             </objects>
             <point key="canvasLocation" x="-669" y="-116"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vQ8-de-nfW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ei4-6B-ckP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ELO-1m-P45">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JKQ-x3-Clm" kind="relationship" relationship="rootViewController" id="EhT-lw-5OG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kh9-Y6-V96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="2386"/>
+        </scene>
     </scenes>
     <resources>
         <image name="58x58" width="58" height="58"/>
@@ -958,7 +981,6 @@
         <image name="item_message" width="48" height="48"/>
         <image name="item_share" width="48" height="48"/>
         <image name="magnifying_glass" width="32" height="32"/>
-        <image name="picture" width="256" height="256"/>
         <image name="shape_collect_yes" width="48" height="48"/>
         <image name="user_24" width="32" height="32"/>
         <image name="大碗饭" width="480" height="360"/>
